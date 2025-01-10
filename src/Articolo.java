@@ -11,20 +11,12 @@ public class Articolo {
         setPezzidisponibili(pezzidisponibili);
     }
 
-    public String getCodicearticolo() {
-        return codicearticolo;
-    }
-
     public void setCodicearticolo(String codicearticolo) {
         if (codicearticolo != null && codicearticolo.length() == 7) {
             this.codicearticolo = codicearticolo;
         } else {
             System.out.println("codice non valido o articolo inesistente");
         }
-    }
-
-    public String getDescrizione() {
-        return descrizione;
     }
 
     public void setDescrizione(String descrizione) {
@@ -35,20 +27,12 @@ public class Articolo {
         }
     }
 
-    public double getPrezzo() {
-        return prezzo;
-    }
-
     public void setPrezzo(double prezzo) {
         if (prezzo > 0.01) {
             this.prezzo = prezzo;
         } else {
             System.out.println("Prezzo non valido");
         }
-    }
-
-    public int getPezzidisponibili() {
-        return pezzidisponibili;
     }
 
     public void setPezzidisponibili(int pezzidisponibili) {

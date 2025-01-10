@@ -9,9 +9,6 @@ public class Sim {
         setListachiamate(listachiamate);
     }
 
-    public String getNumero() {
-        return numero;
-    }
 
     public void setNumero(String numero) {
         if (numero != null && numero.matches("\\d{10}")) {
@@ -21,10 +18,6 @@ public class Sim {
         }
     }
 
-        public int getCredito() {
-            return credito;
-        }
-
         public void setCredito(int credito) {
             if (credito >= 0) {
                 this.credito = credito;
@@ -32,10 +25,6 @@ public class Sim {
                 System.out.println("credito insufficente,ricaricare il credito");
             }
         }
-
-            public String getListachiamate() {
-                return listachiamate;
-            }
 
             public void setListachiamate(String listachiamate) {
                 if(listachiamate != null && !listachiamate.trim().isEmpty()) {
